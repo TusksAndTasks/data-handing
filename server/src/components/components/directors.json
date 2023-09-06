@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_directors",
+  "info": {
+    "displayName": "people",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
