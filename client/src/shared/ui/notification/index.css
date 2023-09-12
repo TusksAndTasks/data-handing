@@ -1,0 +1,8 @@
+.notification{
+    background: #EE93A3;
+    color: white;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+}

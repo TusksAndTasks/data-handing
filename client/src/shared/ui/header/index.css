@@ -1,0 +1,22 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #EE93A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-link.active{
+    text-decoration: underline;
+}
