@@ -1,0 +1,43 @@
+.movie-card{
+    background-color: #EE93A3;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.score-widget{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.score-button{
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.score-button > svg {
+    fill: white;
+    cursor: pointer;
+}
+
+.score-button.active > svg {
+    fill: gold;
+}
+
+.movie-data-title{
+    margin: 0;
+}
+
+.movie-data-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 14px;
+    font-weight: bold;
+}
