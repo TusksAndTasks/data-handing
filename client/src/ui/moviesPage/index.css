@@ -1,0 +1,49 @@
+.load-button{
+   background-color: #EE93A3;
+   font-size: 24px;
+   padding: 14px;
+}
+
+.movie-list-container{
+   display: flex;
+   width: 80%;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+   margin: 120px 0;
+}
+
+.movies-page-container{
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   gap: 24px;
+}
+
+.movie-card{
+   background-color: #EE93A3;
+   border-radius: 20px;
+   padding: 10px;
+   width: 300px;
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between;
+   color: white;
+}
+
+.movie-data-title{
+   margin: 0;
+}
+
+.movie-data-block{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0 14px;
+   font-weight: bold;
+}
+
+.more-data-button{
+   background-color: #58C6F1;
+}
+
