@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "movie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "movie_name": {
+      "type": "string"
+    },
+    "movie_directors": {
+      "displayName": "directors",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.directors"
+    },
+    "movie_tagline": {
+      "type": "string"
+    },
+    "movie_score": {
+      "type": "integer"
+    },
+    "movie_writers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.directors"
+    },
+    "movie_lead_actors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.directors"
+    }
+  }
+}
