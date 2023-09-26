@@ -1,6 +1,6 @@
 import { useContext, createContext, ReactNode } from "react";
 
-import { MoviesStore } from "../../../services/MoviesStore";
+import { MoviesStore } from "../../../stores/MoviesStore";
 
 const MoviesStoreContext = createContext<MoviesStore>(null!);
 export const useMoviesStore = (): MoviesStore => useContext(MoviesStoreContext);

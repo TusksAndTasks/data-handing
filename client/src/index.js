@@ -3,11 +3,9 @@ import { RouterProvider } from "react-router";
 import ReactDOM from "react-dom/client";
 
 import { browserRouter } from "./shared/config";
-import { requestManagerHook } from "./shared/hooks";
 import { PageSpin } from "./shared/ui/pageSpin";
 import "./index.css";
-
-requestManagerHook();
+import "./shared/config/initialize";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
