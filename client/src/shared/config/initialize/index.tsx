@@ -1,7 +1,4 @@
-import { createPortal } from "react-dom";
-
 import { RequestManager } from "../../../api/RequestManager";
-import { Notification } from "../../ui/notification";
 
 RequestManager.baseURL = process.env.REACT_APP_SERVER_URL as string;
 
@@ -13,6 +10,12 @@ RequestManager.beforeRequestMiddleware.push(({ config }) => {
 
 RequestManager.beforeErrorMiddleware.push(({ error }) => {
   const root = document.getElementById("root");
-  createPortal(<Notification text={error.message} />, root!);
+  const notification = document.createElement("div");
+  notification.className = "notification";
+  notification.textContent = error.message;
+
+  root!.appendChild(notification);
+  setTimeout(() => root!.removeChild(notification), 3000);
+
   return null;
 });
