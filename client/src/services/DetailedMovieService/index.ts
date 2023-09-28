@@ -17,16 +17,28 @@ export class DetailedMovieService {
   }
 
   public getMovie = async (id: number) => {
-    const movie = await this.api.getMovie(id);
-    this.state = new DetailedMovieEntity(movie);
+    try {
+      const movie = await this.api.getMovie(id);
+      this.state = new DetailedMovieEntity(movie);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   public createMovie = async (payload: ModelMovieFormData) => {
-    await this.api.createMovie(payload);
+    try {
+      await this.api.createMovie(payload);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   public updateMovieScore = async (score: number) => {
-    const movie = await this.api.updateMovieScore(this.movie.id, score);
-    this.state = new DetailedMovieEntity(movie);
+    try {
+      const movie = await this.api.updateMovieScore(this.movie.id, score);
+      this.state = new DetailedMovieEntity(movie);
+    } catch (e) {
+      console.log(e);
+    }
   };
 }

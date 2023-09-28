@@ -12,8 +12,12 @@ export class MoviesStore {
   }
 
   public getMovies = async () => {
-    const movies = await this.api.getMovies();
-    this.state = movies.map((movie) => new MovieEntity(movie));
+    try {
+      const movies = await this.api.getMovies();
+      this.state = movies.map((movie) => new MovieEntity(movie));
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   get movies() {
